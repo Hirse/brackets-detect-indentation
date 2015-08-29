@@ -1,0 +1,18 @@
+.hirse-detect-indentation-indicator {
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.hirse-detect-indentation-indicator:hover {
+    text-decoration: underline;
+}
+
+.hirse-detect-indentation-indicator.disabled {
+    color: #aaa;
+}
+
+.hirse-detect-indentation-indicator.active {
+    background-image: radial-gradient(circle closest-side, #78b2f2 0px, #78b2f2 5px, transparent 8px);
+    background-position: 0 1px;
+    padding: 0 5px;
+}

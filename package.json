@@ -1,0 +1,25 @@
+{
+  "name": "hirese.brackets-detect-indentation",
+  "title": "Brackets Detect Indentation",
+  "version": "0.1.0",
+  "description": "Detects the indentation used in the current document and sets the editor settings accordingly.",
+  "engines": {
+    "brackets": ">=1.4.0"
+  },
+  "homepage": "https://github.com/hirse/brackets-detect-indentation",
+  "repository": "Hirse/brackets-detect-indentation",
+  "bugs": "https://github.com/Hirse/brackets-detect-indentation/issues",
+  "author": "Jan Pilzer (https://github.com/Hirse)",
+  "license": "MIT",
+  "categories": "editing",
+  "keywords": ["indentation", "detect", "automatic"],
+  "i18n": ["en", "de"],
+  "package-i18n": {
+    "de": {
+      "description": "Ermittelt die Einrückung der gegenwärtigen Datei und stell den Editor entsprechend ein."
+    }
+  },
+  "dependencies": {
+    "detect-indent": "^3.0.1"
+  }
+}
