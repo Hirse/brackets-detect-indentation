@@ -12,8 +12,15 @@
   "author": "Jan Pilzer (https://github.com/Hirse)",
   "license": "MIT",
   "categories": "editing",
-  "keywords": ["indentation", "detect", "automatic"],
-  "i18n": ["en", "de"],
+  "keywords": [
+    "indentation",
+    "detect",
+    "automatic"
+  ],
+  "i18n": [
+    "en",
+    "de"
+  ],
   "package-i18n": {
     "de": {
       "description": "Ermittelt die Einrückung der gegenwärtigen Datei und stell den Editor entsprechend ein."
@@ -27,6 +34,8 @@
     "tar-to-zip": "1.3.x"
   },
   "scripts": {
-    "bundle:win": "npm pack && tar2zip %npm_package_name%-%npm_package_version%.tgz"
+    "bundle:win": "npm pack && tar2zip %npm_package_name%-%npm_package_version%.tgz",
+    "lint": "eslint .",
+    "test": "npm run lint"
   }
 }
