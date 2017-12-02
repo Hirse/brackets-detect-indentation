@@ -21,5 +21,8 @@
   },
   "dependencies": {
     "detect-indent": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "4.12.x"
   }
 }

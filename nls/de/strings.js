@@ -1,4 +1,5 @@
 define({
+    /* beautify preserve:start *//* eslint-disable key-spacing */
     AUTOMATIC_ABBR:         "A",
     AUTOMATIC_ABBR_TOOLTIP: "Klicken, um die automatische Ermittlung der Einrückung umzuschalten",
     DETECT_ABBR:            "D",
@@ -12,4 +13,5 @@ define({
     PREF_SPACES_DESC:       "Anzahl Leerzeichen, die verwendet werden soll, falls die automatische Ermittlung fehlschlägt.",
     PREF_TAB_NAME:          "Standard Tabverwendung",
     PREF_TAB_DESC:          "True, wenn Tabs zur Einrückung verwendet werden sollen, falls die automatische Ermittlung fehlschlägt."
+    /* eslint-enable key-spacing *//* beautify preserve:end */
 });

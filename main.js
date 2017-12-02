@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
     "use strict";
 
-    /* beautify preserve:start */
+    /* beautify preserve:start *//* eslint-disable no-multi-spaces */
     var DocumentManager    = brackets.getModule("document/DocumentManager");
     var Editor             = brackets.getModule("editor/Editor").Editor;
     var EditorManager      = brackets.getModule("editor/EditorManager");
@@ -10,7 +10,7 @@ define(function (require, exports, module) {
     var NodeDomain         = brackets.getModule("utils/NodeDomain");
 
     var Strings            = require("strings");
-    /* beautify preserve:end */
+    /* eslint-enable no-multi-spaces *//* beautify preserve:end */
 
     var PREFIX = "hirse.detect-indentation";
     var prefs = PreferencesManager.getExtensionPrefs(PREFIX);
@@ -24,13 +24,13 @@ define(function (require, exports, module) {
      * If it is turned on, detect the current indentation.
      */
     function toggleAutomaticDetection() {
-        var Document = DocumentManager.getCurrentDocument();
-        var context = PreferencesManager._buildContext(Document.file.fullPath, Document.getLanguage().getId());
+        var doc = DocumentManager.getCurrentDocument();
+        var context = PreferencesManager._buildContext(doc.file.fullPath, doc.getLanguage().getId());
         var newAutoState = !prefs.get("auto", context);
         prefs.set("auto", newAutoState);
         $autoIndicator.toggleClass("active", newAutoState);
         if (newAutoState) {
-            _detectIndentation(Document.getText());
+            _detectIndentation(doc.getText());
         }
     }
 
@@ -39,8 +39,8 @@ define(function (require, exports, module) {
      * Hide the reset-indicator and show the detect-indicator
      */
     function resetIndentation() {
-        var Document = DocumentManager.getCurrentDocument();
-        var context = PreferencesManager._buildContext(Document.file.fullPath, Document.getLanguage().getId());
+        var doc = DocumentManager.getCurrentDocument();
+        var context = PreferencesManager._buildContext(doc.file.fullPath, doc.getLanguage().getId());
         Editor.setSpaceUnits(prefs.get("defaultSpaceUnits", context));
         Editor.setUseTabChar(prefs.get("defaultUseTabChar", context));
         $detectIndicator.removeClass("hidden");
@@ -58,13 +58,13 @@ define(function (require, exports, module) {
     /**
      * Handle activeEditorChange in case there is an Editor gaining focus.
      * Perform the detection and set the auto-indicator style according to preferences.
-     * @param {Object} Editor The new Editor.
+     * @param {Editor} editor The new Editor.
      */
-    function onNewEditor(Editor) {
-        var Document = Editor.document;
-        var context = PreferencesManager._buildContext(Document.file.fullPath, Document.getLanguage().getId());
+    function onNewEditor(editor) {
+        var doc = editor.document;
+        var context = PreferencesManager._buildContext(doc.file.fullPath, doc.getLanguage().getId());
         if (prefs.get("auto", context)) {
-            _detectIndentation(Document.getText());
+            _detectIndentation(doc.getText());
             $autoIndicator.addClass("active");
         } else {
             $autoIndicator.removeClass("active");
@@ -74,7 +74,7 @@ define(function (require, exports, module) {
     /**
      * Actually do the detection.
      * Uses the nodeDomain with the text to get an object of indentation settings.
-     * @param {String} text The text of the current Document.
+     * @param {string} text The text of the current Document.
      */
     function _detectIndentation(text) {
         nodeDomain.exec("detectIndentation", text).done(function (indent) {

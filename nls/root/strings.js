@@ -1,4 +1,5 @@
 define({
+    /* beautify preserve:start *//* eslint-disable key-spacing */
     AUTOMATIC_ABBR:         "A",
     AUTOMATIC_ABBR_TOOLTIP: "Click to toggle the automatic indentation detection",
     DETECT_ABBR:            "D",
@@ -12,4 +13,5 @@ define({
     PREF_SPACES_DESC:       "Number of Space Units to be used if automatic detection fails.",
     PREF_TAB_NAME:          "Fallback UseTabChar",
     PREF_TAB_DESC:          "Whether to indent with tabs if automatic detection fails."
+    /* eslint-enable key-spacing *//* beautify preserve:end */
 });
