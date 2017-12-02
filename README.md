@@ -1,6 +1,6 @@
 [![npm Version](https://img.shields.io/npm/v/hirse.brackets-detect-indentation.svg)](https://www.npmjs.com/package/hirse.brackets-detect-indentation)
-[![Brackets Extension Registry Version](https://badges.ml/hirese.brackets-detect-indentation/version.svg)](https://brackets-extension-badges.github.io#hirese.brackets-detect-indentation)
-[![Brackets Extension Registry Downloads](https://badges.ml/hirese.brackets-detect-indentation/total.svg)](https://brackets-extension-badges.github.io#hirese.brackets-detect-indentation)
+[![Brackets Extension Registry Version](https://badges.ml/hirse.brackets-detect-indentation/version.svg)](https://brackets-extension-badges.github.io#hirse.brackets-detect-indentation)
+[![Brackets Extension Registry Downloads](https://badges.ml/hirse.brackets-detect-indentation/total.svg)](https://brackets-extension-badges.github.io#hirse.brackets-detect-indentation)
 
 [![Build Status](https://travis-ci.org/Hirse/brackets-detect-indentation.svg?branch=master)](https://travis-ci.org/Hirse/brackets-detect-indentation)
 [![Greenkeeper](https://badges.greenkeeper.io/Hirse/brackets-detect-indentation.svg)](https://greenkeeper.io/)

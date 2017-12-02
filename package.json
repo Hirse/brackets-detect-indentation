@@ -1,5 +1,5 @@
 {
-  "name": "hirese.brackets-detect-indentation",
+  "name": "hirse.brackets-detect-indentation",
   "title": "Brackets Detect Indentation",
   "version": "1.0.0",
   "description": "Detects the indentation used in the current document and sets the editor settings accordingly.",
