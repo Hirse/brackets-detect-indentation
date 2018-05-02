@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "eslint": "4.17.x",
-    "tar-to-zip": "1.3.x"
+    "tar-to-zip": "~2.0.0"
   },
   "scripts": {
     "bundle:win": "npm pack && tar2zip %npm_package_name%-%npm_package_version%.tgz",
