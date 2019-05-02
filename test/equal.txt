@@ -1,3 +1,0 @@
-This file should not change the indentation setting
-	1 tab
-    4 spaces

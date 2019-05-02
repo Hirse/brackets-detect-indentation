@@ -1,7 +1,7 @@
 {
   "name": "hirse.brackets-detect-indentation",
   "title": "Brackets Detect Indentation",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Detects the indentation used in the current document and sets the editor settings accordingly.",
   "engines": {
     "brackets": ">=1.11.0"
@@ -27,10 +27,10 @@
     }
   },
   "dependencies": {
-    "detect-indent": "5.0.0"
+    "detect-indent": "6.0.0"
   },
   "devDependencies": {
-    "eslint": "5.14.x",
+    "eslint": "5.16.x",
     "tar-to-zip": "2.0.x"
   },
   "scripts": {

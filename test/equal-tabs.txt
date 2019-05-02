@@ -1,0 +1,3 @@
+This file should change the indentation setting to *tabs*
+	1 tab
+    4 spaces
