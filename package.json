@@ -30,7 +30,7 @@
     "detect-indent": "6.0.0"
   },
   "devDependencies": {
-    "eslint": "6.5.x",
+    "eslint": "~6.6.0",
     "tar-to-zip": "2.0.x"
   },
   "scripts": {
